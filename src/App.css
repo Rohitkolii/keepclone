@@ -1,0 +1,355 @@
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;1,300;1,400;1,500&display=swap');
+
+  /* .DarkApp{
+    background-color: #202124;
+  }
+
+  .DarkApp .DataCard{
+    background-color: #202124;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.219);
+  }
+
+  .DarkApp .nav-icons{
+    color: white;
+  }
+
+  .DarkApp .textbox{
+    background-color: white;
+  }
+
+  .DarkApp .Navbar .nav-con1 .logo{
+    color: white;
+  } */
+
+.dark{
+  background-color: #202124;
+}
+
+.dark .DataCard{
+  background-color: #202124;
+  border: 1px solid rgb(155, 155, 155);
+  color: white;
+  box-shadow: 1px 1px 5px rgb(39, 38, 38);
+}
+
+.dark .Navbar .nav-con2 input{
+  background-color: rgba(128, 128, 128, 0.479);
+  color: white;
+  box-shadow: none;
+  /* border: 1px solid gray; */
+}
+
+.dark p{
+  color: white;
+}
+
+.dark .nav-icons{
+  color: rgb(184, 184, 184);
+}
+
+.dark .textbox{
+  background-color: #202124;
+  color: white;
+  box-shadow: 1px 1px 5px rgb(39, 38, 38);
+  border: 1px solid rgb(80, 80, 80);
+}
+
+.dark .textbox:focus{
+  background-color: #202124;
+  color: white;
+  border: 1px solid rgb(80, 80, 80);
+  box-shadow: 1px 1px 5px rgb(39, 38, 38);
+}
+
+.dark .submitbtn{
+  box-shadow: none;
+  background-color: #202124;
+  color: white;
+  font-size: 20px;
+  border: transparent;
+  
+}
+
+*{
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Roboto', sans-serif;  
+}
+
+/* Navbar CSS AREA  */
+
+.Navbar{
+  align-items: center;
+  padding: 0px 30px;
+  height: 4rem;
+  border-bottom: 1px solid rgb(209, 206, 206);
+  /* display: flex;
+  justify-content: space-between; */
+  display: grid;
+  grid-template-columns: 20% 50% 30%;
+}
+
+.Navbar .nav-con1 .logo{
+  display: flex;
+  gap: 10px;
+  font-weight: 400;
+  font-size: 25px;
+  align-items: center;
+  color: gray;
+}
+
+.logo img{
+  width: 40px;
+}
+
+.nav-con2{
+  text-align: center;
+  position: relative;
+}
+
+.seach-icon{
+  font-size: 23px;
+  position: absolute;
+  /* right: 0; */
+  transform: translate(10px, 10px);
+  color: gray;
+}
+
+.Navbar .nav-con2 input{
+  width: 90%;
+  height: 35px;
+  box-shadow: 1px 1px 5px rgba(168, 167, 167, 0.322);
+  border-radius: 6px;
+  border: transparent;
+  background-color: rgba(238, 237, 237, 0.692);
+  padding: 5px 35px;
+  font-size: 16px;
+}
+
+.Navbar .nav-con2 input:focus{
+  outline: transparent;
+  background-color: white;
+}
+
+
+  .Navbar .nav-con3{
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.nav-icons{
+  color: rgb(80, 80, 80);
+  font-size: 28px;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.nav-icons:hover{
+  background-color: rgba(128, 128, 128, 0.171);
+  color: black;
+}
+
+/* DataInput AREA CSS */
+
+.DataInput{
+  width: 90vw;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 2rem;
+  margin-bottom: 50px;
+}
+
+.DataInput-inner{
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.textbox{
+  width: 50vw;
+  min-height: 35px;
+  max-height: 100%;
+  box-shadow: 1px 1px 5px rgba(128, 128, 128, 0.459);
+  border-radius: 6px;
+  border: transparent;
+  /* background-color: rgba(238, 237, 237, 0.692); */
+  background-color: rgba(238, 237, 237, 0.692);
+  padding: 5px 15px;
+  font-size: 16px;
+  font-weight: 500;
+  color: rgb(88, 88, 88);
+  margin: 10px 0;
+  position: relative;
+  transition: .5s;
+  display: flex;
+}
+
+.textbox:focus{
+  outline: transparent;
+  background-color: white;
+  height: 100px;
+  transition: .5s;
+}
+
+.submitbtn{
+  border: transparent;
+  background-color: white;
+  /* width: fit-content; */
+  gap: 5px;
+  font-size: 18px;
+  box-shadow: 1px 1px 5px rgba(128, 128, 128, 0.5);
+  border-radius: 5%;
+  display: flex;
+  /* align-items: center; */
+  padding: 10px 10px;
+  height: 35px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  right: 15px;
+  align-items: center;
+}
+
+/* DataListContainer AREA  */
+
+.DataListContainer{
+  width: 90%;
+  margin: auto;
+  /* min-height: 100vh;
+  max-height: auto; */
+  display: flex;
+  justify-content: center;
+}
+
+.inner-DataListContainer{
+  position: relative;
+  top: 30px;
+}
+
+.tiles{
+  gap:20px;
+  grid-template-columns: repeat(4, 220px);
+  display: grid;
+}
+
+.list{
+  /* width: 50vw; */
+  width: 50%;
+  display: grid;
+  gap: 20px;
+}
+/* DataCard CSS AREA */
+
+.DataCard{
+  padding: 15px;
+  border-radius: 6px;
+  min-height: 100px;
+  max-height: 300px;
+  box-shadow: 1px 1px 5px rgba(187, 186, 186, 0.459);
+  background-color: white;
+  border: 1px solid rgba(153, 151, 151, 0.274);
+  position: relative;
+}
+
+.edit_DataCard{
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+  /* left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); */
+  background-color: black;
+  color: white;
+  font-size: 15px;
+  padding: 5px;
+  border-radius: 50%;
+  /* display: none; */
+  cursor: pointer;
+}
+
+/* .DataCard:hover .edit_DataCard {
+  opacity: .5;
+  display: block;
+  opacity: 9;
+} */
+
+.DataCard:focus .edit_DataCard{
+  display: none;
+}
+
+.donenote{
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+  background-color: black;
+  background-color: black;
+  color: white;
+  font-size: 15px;
+  padding: 5px;
+  border-radius: 50%;
+  display: none;
+  cursor: pointer;
+}
+
+.DataCard:focus .donenote{
+  display: block;
+}
+
+@media only screen and (max-width:550px) {
+  .Navbar .nav-con2 input{
+    width: 30%;
+  }
+
+  .textbox{
+    width: 80vw;
+  }
+
+  .inner-DataListContainer{
+    width: 100%;
+  }
+  
+  .list .DataCard{
+    width: 80vw;
+    margin: auto;
+  }
+}
+
+@media only screen and (max-width:1000px) {
+  .tiles{
+    grid-template-columns: repeat(3, 220px);
+  }
+}
+
+@media only screen and (max-width:1000px) {
+  .DataListContainer{
+    width: 95%;
+  }
+  .tiles{
+    grid-template-columns: repeat(3, 180px);
+  }
+}
+
+@media only screen and (max-width:600px){
+  .tiles{
+    grid-template-columns: repeat(2, 220px);
+  }
+}
+
+@media only screen and (max-width:500px){
+  .tiles{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .Navbar{
+    grid-template-columns: repeat(2, 50%);
+    padding: 0px 10px;
+  }
+
+  .nav-con2{
+    display: none;
+  }
+  }
